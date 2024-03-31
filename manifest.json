@@ -1,0 +1,13 @@
+{
+  "name": "国开自动上课",
+  "description": "Hello world Extension",
+  "version": "1.0",
+  "manifest_version": 5,
+  "content_scripts": [
+    {
+      "matches": ["https://moodle.syxy.ouchn.cn/*?id=*"],
+      "js": ["scripts/contentscript.js"],
+      "all_frames": false
+    }
+  ]
+}
