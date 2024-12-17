@@ -58,7 +58,7 @@
                 "credentials": "include"
             })
 
-            window.open(`https://moodle.syxy.ouchn.cn/mod/quiz/attempt.php?attempt=${getSearchQuery('attempt')}cmid=${cmid}`)
+            location.href = (`https://moodle.syxy.ouchn.cn/mod/quiz/attempt.php?attempt=${getSearchQuery('attempt')}cmid=${cmid}`)
         }, 600)
     }
 

@@ -33,7 +33,7 @@
                 const optionsEl = element.children[o];
                 const options = optionsEl.getElementsByTagName('label')?.[0]?.innerText || optionsEl.getElementsByTagName('p')?.[0]?.innerText
 
-                if (answer[i].trim() == options.trim()) {
+                if (answer[i].trim().match(/正确答案是：(.*)/)[1] == options.trim()) {
                     self_optionsEl = optionsEl
                     break
                 }
